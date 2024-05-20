@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #87CEEB;
+    overflow-x: hidden;
+}
+
+.app {
+    text-align: center;
+    position: relative;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    overflow-y: auto;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.weather-card, .activity-recommendations, .user-group-selector {
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.activity-recommendations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-group-selector {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.user-group-selector button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-group-selector button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .weather-card, .activity-recommendations, .user-group-selector {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .user-group-selector button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .weather-card, .activity-recommendations, .user-group-selector {
+        padding: 10px;
+        max-width: 95%;
+    }
+
+    .user-group-selector {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .user-group-selector button {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+}

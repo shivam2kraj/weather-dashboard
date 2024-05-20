@@ -1,0 +1,26 @@
+.activity-recommendations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.activity-recommendations h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.activity-recommendations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.activity-recommendations li {
+    margin: 5px 0;
+}

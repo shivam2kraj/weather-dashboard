@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #87CEEB; /* Sky blue background */
+    overflow-x: hidden;
+}
+
+.app {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.cloud {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.8;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: float linear infinite;
+}
+
+.cloud::before, .cloud::after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.cloud1 {
+    width: 200px;
+    height: 60px;
+    top: 20%;
+    left: -200px;
+    animation-duration: 25s;
+}
+
+.cloud1::before {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    left: 50px;
+}
+
+.cloud1::after {
+    width: 120px;
+    height: 120px;
+    top: -60px;
+    right: 50px;
+}
+
+.cloud2 {
+    width: 300px;
+    height: 90px;
+    top: 40%;
+    left: -300px;
+    animation-duration: 35s;
+}
+
+.cloud2::before {
+    width: 150px;
+    height: 150px;
+    top: -75px;
+    left: 75px;
+}
+
+.cloud2::after {
+    width: 180px;
+    height: 180px;
+    top: -90px;
+    right: 75px;
+}
+
+.cloud3 {
+    width: 250px;
+    height: 75px;
+    top: 70%;
+    left: -250px;
+    animation-duration: 45s;
+}
+
+.cloud3::before {
+    width: 125px;
+    height: 125px;
+    top: -62px;
+    left: 62px;
+}
+
+.cloud3::after {
+    width: 150px;
+    height: 150px;
+    top: -75px;
+    right: 62px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(150vw);
+    }
+}
